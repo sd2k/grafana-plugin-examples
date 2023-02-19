@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A basic grafana app plugin",
   "scripts": {
-    "build": "TS_NODE_PROJECT=\"./.config/webpack/tsconfig.webpack.json\" webpack -c ./.config/webpack/webpack.config.ts --env production",
-    "dev": "TS_NODE_PROJECT=\"./.config/webpack/tsconfig.webpack.json\" webpack -w -c ./.config/webpack/webpack.config.ts --env development",
+    "build": "TS_NODE_PROJECT=\"./.config/webpack/tsconfig.webpack.json\" webpack -c ./webpack.config.ts --env production",
+    "dev": "TS_NODE_PROJECT=\"./.config/webpack/tsconfig.webpack.json\" webpack -w -c ./webpack.config.ts --env development",
     "e2e": "yarn cypress install && TZ=UTC yarn grafana-e2e run",
     "test": "jest --watch --onlyChanged",
     "test:ci": "jest --maxWorkers 4",
